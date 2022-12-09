@@ -1,0 +1,50 @@
+h1 {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem 2rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+@media (min-width: 600px) {
+    body {
+        padding: 2rem 8rem;
+    }
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    max-width: 1300px;
+    justify-content: unset;
+}
+
+.row {
+    display: flex;
+    gap: 3rem;
+}
+
+.row-entry-fill {
+    flex: 1;
+}
+
+.rounded {
+    border-radius: 2rem;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+ol li {
+    padding-bottom: 0.75rem;
+}
