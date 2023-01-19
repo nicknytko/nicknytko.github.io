@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Nick's Site </title>
+        <link rel="stylesheet" type="text/css" href="/nickstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1> <a href="/"> Nicolas Nytko </a> / <a href="/misc/"> Misc </a> / Algebraically Smooth 3D Print </h1>
+            <p> Are you the proud owner of a 3D printer who has often thought to themselves, <i> I wish that my prints were algebraically smooth</i>?  I imagine the answer is <i>probably not</i>, but on the off chance that you're a multigrid nerd with a 3D printer lying around, I have just the remedy.</p>
+            <div class="figure">
+                <img src="pic.jpg">
+                <span class="caption">
+                    A 3D-printed multigrid error, based on Figure 8.2 from <i>A Multigrid Tutorial</i>.
+                </span>
+            </div>
+            <p>
+                This is a model of Figure 8.2 from <i>A Multigrid Tutorial</i> <a href="#brigs2000">(Briggs et al., 2000)</a> showing error that is algebraically smooth, yet not geometrically smooth on an example PDE problem that is solved using 8 iterations of Gauss-Seidel relaxation.  The top-left, top-right, and bottom-right quadrants (wrt to the above figure) have strong anisotropy in specific directions, leading to the interesting error patterns that are shown.
+            </p>
+            <div class="figure">
+                <img src="tut_8.2.png">
+                <span class="caption">
+                    Figure 8.2 from <i>A Multigrid Tutorial</i>, included for illustrative purposes.
+                </span>
+            </div>
+            <p>
+                You can grab the <code>.obj</code> file as well as the reference Jupyer notebook used to generate the model here.  The resulting mesh can be different based on the random seed used to initialize the error; though, in practice these differences are very slight.
+                <ul>
+                    <li> <a href="amg_smooth_model.obj"> <code>amg_smooth_model.obj</code> </a> </li>
+                    <li> <a href="amg_smooth_model.ipynb"> <code>amg_smooth_model.ipynb</code> </a> </li>
+                </ul>
+            </p>
+            <h2> References </h2>
+            <ul>
+                <li id="briggs2000">
+                    Briggs, W. L., Henson, V. E., and McCormick, S. F. <i>A Multigrid Tutorial, Second Edition.</i> Society for Industrial and Applied Mathematics, second edition, 2000. doi: 10.1137/1.9780898719505.
+                    URL <a href="https://epubs.siam.org/doi/abs/10.1137/1.9780898719505">https://epubs.siam.org/doi/abs/10.1137/1.9780898719505</a>.
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

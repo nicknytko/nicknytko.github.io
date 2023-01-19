@@ -23,8 +23,13 @@ body {
     display: flex;
 }
 
+code {
+    font-family: "Andale Mono", "Courier New", monospace;
+}
+
 .container {
     max-width: 1300px;
+    width: 100%;
     justify-content: unset;
 }
 
@@ -47,4 +52,23 @@ ol {
 
 ol li {
     padding-bottom: 0.75rem;
+}
+
+div.figure {
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+div.figure img {
+    max-height: 20em;
+    margin: auto;
+    display: block;
+    padding-bottom: 0.6em;
+}
+
+div.figure span.caption {
+    font-size: 0.8em;
+    display: table;
+    margin: auto;
 }
