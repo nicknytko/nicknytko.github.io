@@ -2,7 +2,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     body {
         padding: 0.5rem 2rem;
     }
@@ -10,17 +10,34 @@ h1 {
     .row {
         flex-direction: column;
     }
+
+    div.headshot {
+        width: 100%;
+    }
 }
-@media (min-width: 600px) {
+
+@media (min-width: 700px) {
     body {
         padding: 2rem 8rem;
     }
 }
 
+div.headshot {
+    justify-content: center;
+}
+
+div.headshot img {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+
 body {
     font-family: "Helvetica", "Arial", sans-serif;
     justify-content: center;
     display: flex;
+    line-height: 1.4;
 }
 
 code {
@@ -51,7 +68,7 @@ ol {
 }
 
 ol li {
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.6rem;
 }
 
 div.figure {
@@ -71,4 +88,19 @@ div.figure span.caption {
     font-size: 0.8em;
     display: table;
     margin: auto;
+}
+
+a {
+    color: #474747;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    margin: 1em;
+    height: 1px;
+    border: none;
+    background-color: #474747;
 }
